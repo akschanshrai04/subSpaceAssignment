@@ -152,7 +152,7 @@ function App() {
           )}
           {showsummary && <div className="mt-12 bg-white rounded-lg p-6 shadow-sm border border-gray-200">
             <h2 className="text-xl font-semibold mb-4 text-gray-800">Summary</h2>
-            <p className="text-gray-600">{showsummary}</p>
+            <p className="text-gray-600"><div dangerouslySetInnerHTML={{__html : showsummary}} /></p>
           </div>}
           <div className="mt-12 bg-white rounded-lg p-6 shadow-sm border border-gray-200">
             <h2 className="text-xl font-semibold mb-4 text-gray-800">How it works:</h2>
